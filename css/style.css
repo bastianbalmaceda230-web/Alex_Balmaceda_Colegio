@@ -1,126 +1,486 @@
-.banner{
-    width: 100vw;
-    max-height: auto;
-    max-width: 100vw;
-}
-.logo{
-    width: 30;
-    max-width: 100%;
-    height: auto;
-    max-height: 150px;
-    
-}
-.main-nav ul{
- list-style-type: none;
- background-color: #002855;
- padding: 0px;
- margin: 0px;
- overflow: hidden;
- width: 100vw;
-
- box-shadow:0px 50px 30px rgba(0, 0, 0, 0.5);
- position: relative;
- z-index: 10;
-}
-.main-nav a{
-    color: rgb(216, 163, 16);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* ===== RESET Y BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main-nav a:hover{
-    background-color: rgb(216, 163, 16);
-    color: white;
+html {
+  scroll-behavior: smooth;
 }
- .main-nav li{
-    float: left;
- }
- body{
-    background-color: #002855;
-  
- }
- .mensaje{
-width: auto;
- max-height: 150px;
+
+body {
+  background-color: #002855;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 100vh;
   display: flex;
-  float: right;
-  margin-right: 5%;
-  scale:1.9 ;
-    
- }
- h1{
-    background-image: linear-gradient(to bottom,white,rgb(216,163,16));
-    -webkit-background-clip: text;
-    font-size: 47px;
-    color: transparent;
-    text-align: center;
- }
- h2{
-        background-image: linear-gradient(to bottom,white,rgb(216,163,16));
-    -webkit-background-clip: text;
-    font-size: 30px;
-    color: transparent;
-    text-align: center;
- }
- p{
-    background-image: linear-gradient(to bottom,white,rgb(216,163,16));
-    -webkit-background-clip: text;
-    font-size: 30px;
-    color: transparent;
-    padding: 0px;
-    text-align: center;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+#site-header {
+  background-color: #002855;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+}
+
+.logo {
+  width: 30%;
+  max-width: 150px;
+  height: auto;
+}
+
+.mensaje {
+  height: auto;
+  max-height: 150px;
+  width: auto;
+  margin-left: auto;
+}
+
+/* ===== MENÚ HAMBURGUESA ===== */
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  color: rgb(216, 163, 16);
+  cursor: pointer;
+  padding: 10px 5%;
+  user-select: none;
+}
+
+/* ===== NAV ===== */
+.main-nav ul {
+  list-style-type: none;
+  background-color: #002855;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}
+
+.main-nav li {
+  float: left;
+}
+
+.main-nav a {
+  color: rgb(216, 163, 16);
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: rgb(216, 163, 16);
+  color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
+.banner {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero h1 {
+  margin-top: 20px;
+}
+
+h1 {
+  background-image: linear-gradient(to bottom, white, rgb(216, 163, 16));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 47px;
+  color: transparent;
+  text-align: center;
+}
+
+h2 {
+  background-image: linear-gradient(to bottom, white, rgb(216, 163, 16));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 30px;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  color: #d4d4d4;
+}
+
+/* ===== BOTONES ===== */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 30px 5%;
+}
+
+button {
+  background-color: rgb(216, 163, 16);
+  color: #002855;
+  border-radius: 40px;
+  border: none;
+  font-size: 18px;
+  padding: 12px 28px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: #c8920e;
+}
+
+.vinc {
+  min-width: 250px;
+}
+
+/* ===== ESTADÍSTICAS ===== */
+.stats-section {
+  padding: 20px 5% 40px;
+  text-align: center;
+}
+
+.card {
+  background-color: #103661;
+  max-width: 350px;
+  border-radius: 12px;
+  border: 3px solid rgb(216, 163, 16);
+  margin: 20px auto 0;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.card p {
+  font-size: 22px;
+  color: white;
+}
+
+/* ===== SECCIONES DE CONTENIDO ===== */
+.section-content {
+  padding: 40px 5%;
+}
+
+.section-content h2 {
+  margin-bottom: 30px;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.info-card {
+  background-color: #103661;
+  border: 2px solid rgb(216, 163, 16);
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(216, 163, 16, 0.25);
+}
+
+.info-card h3 {
+  color: rgb(216, 163, 16);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #d4d4d4;
+  line-height: 1.5;
+}
+
+/* ===== REGISTRO HERO ===== */
+.registro-hero {
+  text-align: center;
+  padding: 40px 5% 10px;
+}
+
+.registro-hero h1 {
+  margin-bottom: 10px;
+}
+
+/* ===== FORMULARIO ===== */
+.form-section {
+  padding: 20px 5% 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.registro-form {
+  background-color: #103661;
+  border: 2px solid rgb(216, 163, 16);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 650px;
+  width: 100%;
+}
+
+fieldset {
+  border: 1px solid rgb(216, 163, 16);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: rgb(216, 163, 16);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgb(216, 163, 16);
+  border-radius: 8px;
+  background-color: #002855;
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid rgb(216, 163, 16);
+  outline-offset: 2px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== GALERÍA ===== */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px 5% 50px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgb(216, 163, 16);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.03);
+  opacity: 0.85;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #001a3a;
+  margin-top: auto;
+  padding: 40px 5% 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-col h3 {
+  color: rgb(216, 163, 16);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  font-size: 15px;
+  color: #bbb;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.footer-col a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: rgb(216, 163, 16);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  border-top: 1px solid #103661;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu-toggle:checked ~ .main-nav ul {
     display: flex;
- }
- button{
-    background-color: rgb(216,163,16);
-    color:#002855;
-    border-radius: 40px;
-    border:none;
-    font-size: 20px;
-    height: 50px;
-    width: 150px;
-    margin-right: 8px;
-    cursor: pointer;
-    font-weight: bolder;
-    cursor: pointer;
-    
- }
- .vinc{
-    background-color: rgb(216,163,16);
-    color:#002855;
-    border-radius: 40px;
-    border:none;
-    font-size: 20px;
-    height: 50px;
-    width: 250px;
-    margin-right: 8px;
-    cursor: pointer;
-    font-weight: bolder;
-    
- }
- .buttons{
-    align-content: center;
-    display: flex;
-    justify-content: center;
- }
- .buttons :hover{
-    color: white;
- }
- .stats{
-    display: flex;
-    justify-content: center;
+  }
+
+  .main-nav li {
+    float: none;
+    width: 100%;
+  }
+
+  .main-nav a {
+    padding: 12px 5%;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #103661;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .mensaje {
+    max-height: 100px;
+  }
+
+  .banner {
+    max-height: 300px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .vinc {
+    min-width: auto;
+  }
+
+  .info-card {
+    padding: 20px 15px;
+  }
+
+  .registro-form {
+    padding: 20px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  .mensaje {
+    max-height: 70px;
+  }
+
+  .buttons {
     flex-direction: column;
     align-items: center;
- }
- .card{
-    background-color: #103661;
-    width: 300px;
-    border-radius: 12px;
-    border:3px solid rgb(216, 163, 16);
-    margin:auto;
-    margin-top: 20px;
- }
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .banner {
+    max-height: 220px;
+  }
+}

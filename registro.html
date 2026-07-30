@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Alumnos — Colegio Los Senderos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header">
+    <div class="header-top">
+      <a href="index.html"><img class="logo" src="img/Logo Colegio-Photoroom.png" alt="Logo Colegio Los Senderos"></a>
+      <img class="mensaje" src="img/Mensaje-Photoroom.png" alt="Mensaje">
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#area">Área Académica</a></li>
+        <li><a href="index.html#estudiantes">Estudiantes</a></li>
+        <li><a href="index.html#apoderados">Apoderados</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="talleres.html">Talleres</a></li>
+        <li><a href="registro.html">Registro de Alumnos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="registro-hero">
+      <h1>Registro de Alumnos</h1>
+      <p>Complete el siguiente formulario para inscribir a un nuevo estudiante.</p>
+    </section>
+
+    <section class="form-section">
+      <form class="registro-form">
+        <fieldset>
+          <legend>Datos del Alumno</legend>
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellido del alumno">
+          </div>
+
+          <div class="form-group">
+            <label for="rut">RUT *</label>
+            <input type="text" id="rut" name="rut" required placeholder="12.345.678-9">
+          </div>
+
+          <div class="form-group">
+            <label for="fecha-nac">Fecha de Nacimiento *</label>
+            <input type="date" id="fecha-nac" name="fecha-nac" required>
+          </div>
+
+          <div class="form-group">
+            <label for="curso">Curso al que postula *</label>
+            <select id="curso" name="curso" required>
+              <option value="">— Seleccione —</option>
+              <option value="prekinder">Pre-Kínder</option>
+              <option value="kinder">Kínder</option>
+              <option value="1basico">1º Básico</option>
+              <option value="2basico">2º Básico</option>
+              <option value="3basico">3º Básico</option>
+              <option value="4basico">4º Básico</option>
+              <option value="5basico">5º Básico</option>
+              <option value="6basico">6º Básico</option>
+              <option value="7basico">7º Básico</option>
+              <option value="8basico">8º Básico</option>
+              <option value="1medio">1º Medio</option>
+              <option value="2medio">2º Medio</option>
+              <option value="3medio">3º Medio</option>
+              <option value="4medio">4º Medio</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos del Apoderado</legend>
+
+          <div class="form-group">
+            <label for="apo-nombre">Nombre completo *</label>
+            <input type="text" id="apo-nombre" name="apo-nombre" required placeholder="Nombre y apellido del apoderado">
+          </div>
+
+          <div class="form-group">
+            <label for="apo-rut">RUT *</label>
+            <input type="text" id="apo-rut" name="apo-rut" required placeholder="12.345.678-9">
+          </div>
+
+          <div class="form-group">
+            <label for="apo-correo">Correo electrónico *</label>
+            <input type="email" id="apo-correo" name="apo-correo" required placeholder="correo@ejemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="apo-telefono">Teléfono *</label>
+            <input type="tel" id="apo-telefono" name="apo-telefono" required placeholder="+56 9 1234 5678">
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Enviar Solicitud</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Colegio Internacional Los Senderos</h3>
+        <p>Tu camino hacia la excelencia desde 1874.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>📍 Av. Principal 1234, Santiago</p>
+        <p>📞 +56 2 2123 4567</p>
+        <p>✉️ contacto@lossenderos.cl</p>
+      </div>
+      <div class="footer-col">
+        <h3>Enlaces</h3>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="registro.html">Registro de Alumnos</a></p>
+        <p><a href="talleres.html">Talleres</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Colegio Internacional Los Senderos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

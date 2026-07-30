@@ -1,57 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colegio</title>
+  <title>Colegio Internacional Los Senderos</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/Logo Colegio-Photoroom.png" type="image/png">
 </head>
-
 <body>
   <header id="site-header">
-    <img class="logo" src="img\Logo Colegio-Photoroom.png" alt="">
-    <img class="mensaje" src="img\Mensaje-Photoroom.png" alt="">
-    <header id="site-header">
-      <nav id="main-nav" class="main-nav">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#area">Area Academica</a></li>
-          <li><a href="#estudiantes">Estudiantes</a></li>
-          <li><a href="#apoderados">Apoderados</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="talleres.html">Talleres</a></li>
-          <li><a href=" registro.html">Registro de Alumnos</a></li>
+    <div class="header-top">
+      <img class="logo" src="img/Logo Colegio-Photoroom.png" alt="Logo Colegio Los Senderos">
+      <img class="mensaje" src="img/Mensaje-Photoroom.png" alt="Mensaje">
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#area">Área Académica</a></li>
+        <li><a href="#estudiantes">Estudiantes</a></li>
+        <li><a href="#apoderados">Apoderados</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="talleres.html">Talleres</a></li>
+        <li><a href="registro.html">Registro de Alumnos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <img class="banner" src="img\Hero_Banner .png" alt="">
-        <h1>Colegio Internacional Los Senderos</h1>
-        <h2>Tu camino hacia la excelencia</h2>
-        <h2>Estamos comprometidos con la excelencia academica de nuestros estudiantes.</h2>
-      </section>
+  <main>
+    <section id="inicio" class="hero">
+      <img class="banner" src="img/Hero_Banner .png" alt="Banner Colegio">
+      <h1>Colegio Internacional Los Senderos</h1>
+      <h2>Tu camino hacia la excelencia</h2>
+      <p>Estamos comprometidos con la excelencia académica de nuestros estudiantes.</p>
+    </section>
 
-      <section class="buttons">
-        <button>Admision</button>
-        <button>Aula Virtual</button>
-        <button class="vinc">Vinculacion con el Medio</button>
-      </section>
+    <section class="buttons">
+      <button>Admisión</button>
+      <button>Aula Virtual</button>
+      <button class="vinc">Vinculación con el Medio</button>
+    </section>
+
+    <section class="stats-section">
+      <h2>Según los números</h2>
       <div class="card">
-        <section class="stats">
-          <h1>Segun los numeros</h1>
-          <p>&#10003 +2000 estudiantes</p>
-          <p>&#10003 150 años de trayectoria</p>
-          <p>&#10003 Certificacion de 7 años</p>
-        </section>
+        <p>&#10003; +2000 estudiantes</p>
+        <p>&#10003; 150 años de trayectoria</p>
+        <p>&#10003; Certificación de 7 años</p>
       </div>
-    </main>
-    <footer>
+    </section>
 
-    </footer>
+    <section id="area" class="section-content">
+      <h2>Área Académica</h2>
+      <div class="grid-cards">
+        <div class="info-card">
+          <h3>Educación Parvularia</h3>
+          <p>Programa integral para los más pequeños, fomentando el aprendizaje a través del juego y la exploración.</p>
+        </div>
+        <div class="info-card">
+          <h3>Enseñanza Básica</h3>
+          <p>Formación sólida en lenguaje, matemáticas, ciencias e inglés con metodologías innovadoras.</p>
+        </div>
+        <div class="info-card">
+          <h3>Enseñanza Media</h3>
+          <p>Preparación académica de excelencia con orientación vocacional y electivos diferenciados.</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="estudiantes" class="section-content">
+      <h2>Estudiantes</h2>
+      <div class="grid-cards">
+        <div class="info-card">
+          <h3>Centro de Alumnos</h3>
+          <p>Espacio de participación y liderazgo estudiantil donde los alumnos desarrollan proyectos e iniciativas.</p>
+        </div>
+        <div class="info-card">
+          <h3>Biblioteca</h3>
+          <p>Acceso a más de 10.000 volúmenes, recursos digitales y salas de estudio colaborativo.</p>
+        </div>
+        <div class="info-card">
+          <h3>Orientación</h3>
+          <p>Apoyo psicoeducativo y vocacional para acompañar a cada estudiante en su desarrollo personal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="apoderados" class="section-content">
+      <h2>Apoderados</h2>
+      <div class="grid-cards">
+        <div class="info-card">
+          <h3>Centro de Padres</h3>
+          <p>Comunidad activa que colabora con el colegio en actividades y proyectos de mejora continua.</p>
+        </div>
+        <div class="info-card">
+          <h3>Portal Apoderados</h3>
+          <p>Accede a notas, asistencia, horarios y comunicaciones oficiales en línea.</p>
+        </div>
+        <div class="info-card">
+          <h3>Reuniones y Talleres</h3>
+          <p>Encuentros mensuales y talleres formativos para apoyar la crianza y educación en familia.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Colegio Internacional Los Senderos</h3>
+        <p>Tu camino hacia la excelencia desde 1874.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>📍 Av. Principal 1234, Santiago</p>
+        <p>📞 +56 2 2123 4567</p>
+        <p>✉️ contacto@lossenderos.cl</p>
+      </div>
+      <div class="footer-col">
+        <h3>Enlaces</h3>
+        <p><a href="#inicio">Inicio</a></p>
+        <p><a href="registro.html">Registro de Alumnos</a></p>
+        <p><a href="talleres.html">Talleres</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Colegio Internacional Los Senderos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
-
 </html>

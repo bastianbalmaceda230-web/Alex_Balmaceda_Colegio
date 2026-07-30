@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
-    <link rel="stylesheet" href="css/style-galeria.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería — Colegio Los Senderos</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>Galeria</header>
-<section>
-    <img src="img\pexels-max-fischer-5212335.jpg" alt="">
-    <img src="img/pexels-pavel-danilyuk-8422147.jpg" alt="">
-    <img src="img\pexels-pavel-danilyuk-8423416.jpg" alt="">
-    <img src="img\pexels-thisisengineering-19895774.jpg" alt="">
-    <img src="img\pexels-tima-miroshnichenko-5428014.jpg" alt="">
-    <img src="img\pexels-yankrukov-8617759.jpg" alt="">
-</section>
+  <header id="site-header">
+    <div class="header-top">
+      <a href="index.html"><img class="logo" src="img/Logo Colegio-Photoroom.png" alt="Logo Colegio Los Senderos"></a>
+      <img class="mensaje" src="img/Mensaje-Photoroom.png" alt="Mensaje">
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#area">Área Académica</a></li>
+        <li><a href="index.html#estudiantes">Estudiantes</a></li>
+        <li><a href="index.html#apoderados">Apoderados</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="talleres.html">Talleres</a></li>
+        <li><a href="registro.html">Registro de Alumnos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="registro-hero">
+      <h1>Galería</h1>
+      <p>Conoce nuestras instalaciones y actividades.</p>
+    </section>
+
+    <section class="galeria-grid">
+      <img src="img/pexels-max-fischer-5212335.jpg" alt="Estudiantes en clase">
+      <img src="img/pexels-pavel-danilyuk-8422147.jpg" alt="Actividad académica">
+      <img src="img/pexels-pavel-danilyuk-8423416.jpg" alt="Laboratorio">
+      <img src="img/pexels-thisisengineering-19895774.jpg" alt="Taller de ingeniería">
+      <img src="img/pexels-tima-miroshnichenko-5428014.jpg" alt="Biblioteca">
+      <img src="img/pexels-yankrukov-8617759.jpg" alt="Clase interactiva">
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Colegio Internacional Los Senderos</h3>
+        <p>Tu camino hacia la excelencia desde 1874.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>📍 Av. Principal 1234, Santiago</p>
+        <p>📞 +56 2 2123 4567</p>
+        <p>✉️ contacto@lossenderos.cl</p>
+      </div>
+      <div class="footer-col">
+        <h3>Enlaces</h3>
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="registro.html">Registro de Alumnos</a></p>
+        <p><a href="talleres.html">Talleres</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Colegio Internacional Los Senderos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
